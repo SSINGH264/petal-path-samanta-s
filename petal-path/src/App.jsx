@@ -1,9 +1,12 @@
-function App() {
-  return (
-    <div>
-      <h1>Welcome to Petal Path!</h1>
+import Navbar from "./Components/Navbar/navbar";
+
+const App = () => {
+
+   return (
+    <div className = 'container'>
+      <Navbar/>
     </div>
-  );
+   )
 }
 
 export default App;

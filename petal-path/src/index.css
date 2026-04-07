@@ -1,0 +1,12 @@
+/* Applying these properties to all the elements*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif
+}
+.container{
+    width:100vw;
+    min-height: 100vh;
+    background-color: rgb(235, 149, 212);
+}

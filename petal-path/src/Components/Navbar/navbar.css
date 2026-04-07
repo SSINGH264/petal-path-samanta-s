@@ -1,0 +1,15 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(232, 186, 232);
+  color: rgb(78, 145, 26);
+  padding: 10px 10%;
+}
+ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
