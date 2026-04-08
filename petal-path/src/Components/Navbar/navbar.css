@@ -3,13 +3,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgb(232, 186, 232);
-  color: rgb(78, 145, 26);
+  background: rgb(232, 200, 232);
+  color: rgb(75, 144, 18);
   padding: 10px 10%;
 }
 ul li{
     display: inline-block;
     margin: 10px 20px;
     font-size: 20px;
-    cursor: pointer;
+    cursor: 🌼;
+
+    box-shadow: 0 0 0 2px rgb(234, 64, 135);
+
+    
+
 }
