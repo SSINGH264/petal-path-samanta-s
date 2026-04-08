@@ -6,16 +6,12 @@ const Navbar = () => {
             <img src="" alt="" className="logo"/>
 
             <ul>
-                <li>Home</li>
+                <li>Petal Path</li>
                 <li>Discover</li>
                 <li>Events</li>
                 <li>Sign In</li>
             </ul>
-
-            <div className= "search-box">
-                <input type="Text" placeholder="Search"/>
-                <img src="" alt="" />
-            </div>
+            
         </div>
     )
 }
