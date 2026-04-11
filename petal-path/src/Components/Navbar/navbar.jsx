@@ -1,17 +1,20 @@
-import "./navbar.css"
+import "./navbar.css";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
     return (
         <div className="navbar">
             <img src="" alt="" className="logo"/>
-<h1>Welcome to Petal Path</h1>
+    <h1>Welcome to Petal Path</h1>
             <ul>
-                <li>Petal Path</li>
+                <li>About</li>
                 <li>Discover</li>
                 <li>Events</li>
-                <li>Sign In</li>
             </ul>
-            
+
+            <div className="signin">Sign In</div>
+
+
         </div>
     )
 }
