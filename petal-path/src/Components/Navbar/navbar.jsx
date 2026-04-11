@@ -4,8 +4,7 @@ import logo from "../../assets/logo.png";
 const Navbar = () => {
     return (
         <div className="navbar">
-            <img src="" alt="" className="logo"/>
-    <h1>Welcome to Petal Path</h1>
+            <img src={logo} alt="Petal Path Logo" className="logo" />
             <ul>
                 <li>About</li>
                 <li>Discover</li>
