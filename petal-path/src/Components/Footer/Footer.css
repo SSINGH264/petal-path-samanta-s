@@ -1,0 +1,19 @@
+.footer {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+  background-color: #F7A8B833;
+}
+
+.footer-tagline {
+  font-size: 18px;
+  color: #7fa37a;
+  margin-bottom: 6px;
+  font-family: cursive;
+}
+
+.footer-text {
+  font-size: 13px;
+  color: #7fa37a;
+  font-family: cursive;
+}
