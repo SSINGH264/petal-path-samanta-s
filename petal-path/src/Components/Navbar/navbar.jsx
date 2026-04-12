@@ -1,4 +1,4 @@
-import "./navbar.css";
+import "./Navbar.css";
 import logo from "../../assets/logo.png";
 
 const Navbar = () => {
@@ -17,4 +17,4 @@ const Navbar = () => {
         </div>
     )
 }
-export default Navbar
+export default Navbar;

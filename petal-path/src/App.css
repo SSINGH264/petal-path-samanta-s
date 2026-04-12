@@ -1,4 +1,4 @@
-li:hover::before {
-  content: "☑️";
-  margin-right: 10px;
+.app{
+    display: flex;
+    flex-direction: column;
 }

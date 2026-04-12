@@ -1,14 +1,15 @@
 import Navbar from "./Components/Navbar/Navbar";
+import SearchBar from "./Components/Search/Search";
 
 const App = () => {
 
    return (
-
-    <div className = 'app'>
-      <div className = 'container'> 
+    <div className = "app">
+      <div className = "container"> 
       <Navbar/>
-      </div>
+      <SearchBar/>
     </div>
+   </div>
 
    );
 };
