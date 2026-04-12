@@ -1,4 +1,4 @@
-import Navbar from "./Components/Navbar/Navbar";
+import Header from "./Components/Header/Header";
 
 const App = () => {
 
@@ -6,7 +6,7 @@ const App = () => {
 
     <div className = 'app'>
       <div className = 'container'> 
-      <Navbar/>
+      <Header/>
       </div>
     </div>
 
