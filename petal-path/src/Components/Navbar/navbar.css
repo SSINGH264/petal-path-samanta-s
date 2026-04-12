@@ -8,10 +8,10 @@
   padding: 10px 20px;
 }
 
-.navbar ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .logo {
@@ -21,12 +21,27 @@
 
 }
 
+.logo-text{
+  font-family: cursive;
+  font-size: 20px;
+  color: #7fa37a;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .signin {
   font-size: 20px;
   cursor: pointer;
   font-family: cursive;
 
 }
+
 
 ul li{
     display: inline-block;
