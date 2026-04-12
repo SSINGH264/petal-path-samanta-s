@@ -6,7 +6,6 @@ import Navbar from "../Navbar/Navbar";
 const Header = () => {
     return (
         <header className = "header">
-            <h1>Petal Path</h1>
             <Navbar/>
         </header>
     )
