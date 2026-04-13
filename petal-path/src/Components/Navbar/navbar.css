@@ -9,64 +9,43 @@
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-<<<<<<< HEAD
-=======
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.logo-text{
+.logo-text {
   font-family: cursive;
   font-size: 20px;
   color: #7fa37a;
->>>>>>> a1c4016 (reworked the header)
 }
 
 .logo {
   height: 60px;
   object-fit: contain;
   border-radius: 50px;
-
 }
 
-<<<<<<< HEAD
-.logo-text{
-  font-family: cursive;
-  font-size: 20px;
-  color: #7fa37a;
-}
-
-=======
->>>>>>> a1c4016 (reworked the header)
 .navbar ul {
   display: flex;
   align-items: center;
   list-style: none;
-<<<<<<< HEAD
   margin: 0;
   padding: 0;
 }
 
-=======
-}
-
-
->>>>>>> a1c4016 (reworked the header)
 .signin {
   font-size: 20px;
   cursor: pointer;
   font-family: cursive;
-
 }
 
-
-ul li{
-    display: inline-block;
-    margin: 10px 20px;
-    font-size: 22px;
-    cursor: pointer;
-    font-family: cursive;
+ul li {
+  display: inline-block;
+  margin: 10px 20px;
+  font-size: 22px;
+  cursor: pointer;
+  font-family: cursive;
 }
 
 ul li:hover::before {
