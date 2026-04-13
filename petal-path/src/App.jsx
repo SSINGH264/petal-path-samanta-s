@@ -1,3 +1,4 @@
+import Navbar from "./Components/Navbar/navbar";
 import Header from "./Components/Header/Header";
 import SearchBar from "./Components/Search/Search";
 import BrowseCategory from "./Components/Browse/Browse";
