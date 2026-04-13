@@ -1,4 +1,4 @@
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./Components/Navbar/navbar";
 import SearchBar from "./Components/Search/Search";
 import BrowseCategory from "./Components/Browse/Browse";
 import Footer from "./Components/Footer/Footer";
