@@ -12,6 +12,15 @@
     display: flex;
     align-items: center;
     gap: 10px;
+<<<<<<< HEAD
+=======
+}
+
+.logo-text{
+  font-family: cursive;
+  font-size: 20px;
+  color: #7fa37a;
+>>>>>>> a1c4016 (reworked the header)
 }
 
 .logo {
@@ -21,20 +30,29 @@
 
 }
 
+<<<<<<< HEAD
 .logo-text{
   font-family: cursive;
   font-size: 20px;
   color: #7fa37a;
 }
 
+=======
+>>>>>>> a1c4016 (reworked the header)
 .navbar ul {
   display: flex;
   align-items: center;
   list-style: none;
+<<<<<<< HEAD
   margin: 0;
   padding: 0;
 }
 
+=======
+}
+
+
+>>>>>>> a1c4016 (reworked the header)
 .signin {
   font-size: 20px;
   cursor: pointer;
