@@ -1,0 +1,12 @@
+.signin-form {
+  width: 300px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #F7A8B833;
+  color:#7fa37a;
+  border-radius: 10px;
+  text-align: center;
+  font-family: cursive;
+  height: 100px;
+  overflow: hidden;
+}

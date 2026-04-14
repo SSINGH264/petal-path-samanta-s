@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 
@@ -15,7 +17,9 @@ const Navbar = () => {
         <li>Events</li>
       </ul>
 
-      <div className="signin">Sign In</div>
+      <Link to="/signin" className="signin">
+        Sign In
+      </Link>
     </div>
   );
 };
