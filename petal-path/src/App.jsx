@@ -7,13 +7,15 @@ import BrowseCategory from "./Components/Browse/Browse";
 import Footer from "./Components/Footer/Footer";
 import SignInForm from "./Components/SignIn/SignIn";
 import SignUp from "./Components/SingUp/SignUp";
+import About from "./Components/About/About";
 
 const App = () => {
   return (
     <div className="app">
       <div className="container">
         <Header />
-        <Routes>
+        
+         <Routes>
           <Route
             path="/"
             element={
@@ -22,6 +24,11 @@ const App = () => {
                 <BrowseCategory />
               </>
             }
+          />
+
+           <Route
+            path="/about"
+            element={<About />}
           />
 
           <Route
