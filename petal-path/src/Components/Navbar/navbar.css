@@ -9,22 +9,21 @@
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text {
+  font-family: cursive;
+  font-size: 20px;
+  color: #7fa37a;
 }
 
 .logo {
   height: 60px;
   object-fit: contain;
   border-radius: 50px;
-
-}
-
-.logo-text{
-  font-family: cursive;
-  font-size: 20px;
-  color: #7fa37a;
 }
 
 .navbar ul {
@@ -39,16 +38,14 @@
   font-size: 20px;
   cursor: pointer;
   font-family: cursive;
-
 }
 
-
-ul li{
-    display: inline-block;
-    margin: 10px 20px;
-    font-size: 22px;
-    cursor: pointer;
-    font-family: cursive;
+ul li {
+  display: inline-block;
+  margin: 10px 20px;
+  font-size: 22px;
+  cursor: pointer;
+  font-family: cursive;
 }
 
 ul li:hover::before {
