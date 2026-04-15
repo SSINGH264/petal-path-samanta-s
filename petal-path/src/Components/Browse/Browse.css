@@ -42,3 +42,18 @@
     text-align: center;
     margin-bottom: 40px;
 }
+
+.browse-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.browse-card {
+  cursor: pointer;
+}
+
+/* to let the card "pop" */
+
+.browse-card:hover {
+  transform: scale(1.03);
+}

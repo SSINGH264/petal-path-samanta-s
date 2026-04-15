@@ -35,8 +35,6 @@ const SignInForm = () => {
 
         <button type="submit">Submit</button>
       </form>
-
-
      <div className="signin-extra">
         <p>Don't have an account?</p>
         <Link to="/signup" className="join-link">

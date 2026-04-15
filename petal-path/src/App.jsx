@@ -2,12 +2,13 @@ import { Routes, Route } from "react-router-dom";
 
 
 import Header from "./Components/Header/Header";
-import SearchBar from "./Components/Search/Search";
 import BrowseCategory from "./Components/Browse/Browse";
 import Footer from "./Components/Footer/Footer";
 import SignInForm from "./Components/SignIn/SignIn";
 import SignUp from "./Components/SingUp/SignUp";
 import About from "./Components/About/About";
+import EventDetails from "./Components/Events/Events";
+
 
 const App = () => {
   return (
@@ -20,7 +21,6 @@ const App = () => {
             path="/"
             element={
               <>
-                <SearchBar />
                 <BrowseCategory />
               </>
             }
@@ -30,6 +30,8 @@ const App = () => {
             path="/about"
             element={<About />}
           />
+
+          <Route path="/events/:eventId" element={<EventDetails />} />
 
           <Route
             path="/signin"

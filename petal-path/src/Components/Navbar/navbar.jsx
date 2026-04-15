@@ -19,7 +19,11 @@ const Navbar = () => {
         <li>
           <Link to="/about" className ="about"> About </Link>
           </li>
-        <li>Discover</li>
+
+        <li>
+          <Link to ="/plant-interest" className="plantInterest"> Plant Intrests</Link> 
+          </li>  
+
         <li>Events</li>
       </ul>
 

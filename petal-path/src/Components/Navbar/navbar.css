@@ -50,6 +50,14 @@
   font-family: cursive;
 }
 
+.plantInterest {
+   text-decoration: none;
+  color: inherit;
+  font-size: 25px;
+  font-family: cursive;
+
+}
+
 ul li {
   display: inline-block;
   margin: 10px 20px;
