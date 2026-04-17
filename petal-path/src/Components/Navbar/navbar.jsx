@@ -9,6 +9,8 @@ import "./Navbar.css";
 import logo from "../../assets/logo.png";
 
 // created navbar and links
+//animation for the logo
+
 const Navbar = () => {
   const logoRef = useRef(null);
     useEffect(() => {
@@ -22,34 +24,24 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo-container">
-        <img 
-        ref = {logoRef}
-        src={logo}
-        alt="Petal Path Logo" 
-        className="logo" />
+        <img ref = {logoRef} src={logo} alt="Petal Path Logo" className="logo" />
 
-        <Link to="/" className="logo-text">
-        Petal Path
-        </Link>
+        <Link to="/" className="logo-text"> Petal Path </Link>
 
       </div>
 
-      <ul>
-        <li>
-          <Link to="/about" className ="about"> About </Link>
-          </li>
+{/* used an unordered list for navbar*/}
 
-        <li>
-          <Link to ="/plant-interest" className="plantInterest"> Plant Intrests</Link> 
-          </li>  
+      <ul>
+        <li> <Link to="/about" className ="about"> About </Link> </li>
+        <li> <Link to ="/plant-interest" className="plantInterest"> Plant Intrests</Link> </li>  
 
       </ul>
 
-      <Link to="/signin" className="signin">
-        Sign In
-      </Link>
+      <Link to="/signin" className="signin"> Sign In </Link>
     </div>
   );
+  
 };
 
 export default Navbar;

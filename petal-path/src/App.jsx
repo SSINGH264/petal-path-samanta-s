@@ -1,46 +1,45 @@
 import { Routes, Route } from "react-router-dom";
 
+// imported all the components for the application
+
 import Header from "./Components/Header/Header";
 import BrowseCategory from "./Components/Browse/Browse";
 import Footer from "./Components/Footer/Footer";
 import SignInForm from "./Components/SignIn/SignIn";
 import SignUp from "./Components/SingUp/SignUp";
 import About from "./Components/About/About";
-import EventDetails from "./Components/Events/Events";
 import PlantInterest from "./Components/PlantInterest/PlantInterest";
+
+//not sure if these are formatted correctly, but its easier for me to read
 
 const App = () => {
   return (
     <div className="app">
       <div className="container">
-        <Header />
         
-         <Routes>
-          <Route path="/" element={
-              <>
-                <BrowseCategory />
-              </>
-            }
-          />
+        <Header />
+        <Routes> 
 
-           <Route path="/about" element={<About />} />
-           
-           <Route path="/plant-interest" element={<PlantInterest />} />
+          <Route path="/" element={<BrowseCategory />} />
 
-           <Route path="/events/:eventId" element={<EventDetails />} />
+          <Route path="/about" element={<About />} />
 
-          <Route path="/signin" element={
-            
-            <div className="signin-page">
+          <Route path="/plant-interest" element={<PlantInterest />} />
 
-                <SignInForm />
+          <Route 
+            path="/signin" 
+            element={
+              <div className="signin-page"> 
+              <SignInForm /> 
               </div>
             }
-          />
+            />
 
-          <Route path="/signup"element={
-            <div className="signin-page">
-                <SignUp />
+          <Route 
+            path="/signup"
+            element={
+              <div className="signin-page"> 
+              <SignUp />
               </div>
             }
           />

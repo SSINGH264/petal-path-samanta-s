@@ -1,6 +1,8 @@
 import "./Footer.css";
 
-  const Footer = () => {
+// Displays the website footer with tagline, copyright, and contact information
+
+const Footer = () => {
  return (
     <footer className="footer">
       <p className="footer-tagline">
@@ -10,19 +12,21 @@ import "./Footer.css";
         © 2026 Samanta Singh
       </p>
       <table className="footer-table">
-              <tbody>
-                <tr>
-                  <td>Email:</td>
-                  <td>floral.petalpath@gmail.com</td>
-                </tr>
-                <tr>
-                  <td>Phone:</td>
-                  <td>(555) FLO-WERS</td>
-                </tr>
-              </tbody>
-            </table>
+        <tbody>
+          <tr>
+           <td>Email:</td>
+            <td>floral.petalpath@gmail.com</td>
+          </tr>
+
+          <tr>
+            <td>Phone:</td>
+            <td>(555) FLO-WERS</td>
+          </tr>
+        </tbody>
+      </table>
 
     </footer>
   );
+  
 };
 export default Footer;

@@ -6,14 +6,12 @@ const SignUp = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [phone, setPhone] = useState("");
   const[error, setError] = useState("");
-  const [sucess, setSuccess] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    //creating validations for name & email
+    //creating validations for name, email & password
 
     if (!name.trim()) {
       setError("Name is a required field!")
@@ -25,7 +23,13 @@ const SignUp = () => {
       return;
     }
 
-    alert("Welcome to Your Petal Path Account " + name + "!");
+    if (!password.trim()) { 
+      setError("Password is required!");
+      return;
+}
+
+
+  alert("Welcome to Your Petal Path Account " + name + "!");
 
   };
 
@@ -33,6 +37,8 @@ const SignUp = () => {
   return (
     <div className="signup-form">
       <h2>Create Account</h2>
+
+      {error && <p className="error-message">{error}</p>}
 
       <form onSubmit={handleSubmit}>
         <input
@@ -50,13 +56,6 @@ const SignUp = () => {
         />
 
         <input
-          type= "phone"
-          placeholder="Phone"
-          value={setPhone}
-          onChange={(e) => setPhone(e.target.value)}
-          />
-
-        <input
           type="password"
           placeholder="Password"
           value={password}
@@ -65,6 +64,8 @@ const SignUp = () => {
 
         <button type="submit">Sign Up</button>
       </form>
+
+{/* creating routes to go back to the main page or signin */}
 
       <div className="signup-links">
         <Link to="/">Go Home</Link>

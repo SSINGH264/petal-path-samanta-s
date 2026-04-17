@@ -1,5 +1,6 @@
 import "./About.css";
 
+//creating the about petal path blurb
 const About = () => {
   return (
     <div className="about-page">

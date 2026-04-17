@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./PlantInterest.css";
 
+// array of blooms
 const interests = [
   "Bird of Paradise",
   "Camellia",
@@ -16,6 +17,8 @@ const interests = [
   "Rose",
   "Sunflower"
 ];
+
+// creating state & variable
 
 const PlantInterest = () => {
   const [selectedInterests, setSelectedInterests] = useState([]);
@@ -35,6 +38,8 @@ const PlantInterest = () => {
         Choose the blooms that interest you most.
       </p>
 
+{/* button group for all bloom interests */}
+
       <div className="interest-button-group">
         {interests.map((interest) => (
           <button
@@ -43,12 +48,13 @@ const PlantInterest = () => {
             className={`interest-button ${
               selectedInterests.includes(interest) ? "active" : ""
             }`}
-            onClick={() => toggleInterest(interest)}
-          >
+            onClick={() => toggleInterest(interest)}>
             {interest}
           </button>
         ))}
       </div>
+
+{/* displays user choices */}
 
       <div className="selected-display">
         <h3>Selected Interests</h3>

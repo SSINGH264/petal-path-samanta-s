@@ -3,14 +3,19 @@
   margin: 40px auto;
   padding: 20px;
   color: #7ea37f;
-  border-radius: 15px;
+  border-radius: 50px;
   text-align: center;
-  background: #fff;
+  background: #FCE4E880;
+}
+
+.interest-button:hover {
+  background: #7ea37f;
 }
 
 .plant-interest-title {
   color: #7ea37f;
   margin-bottom: 10px;
+  font-family: cursive;
 }
 
 .plant-interest-subtitle {
@@ -32,12 +37,7 @@
   border: 1px solid #ddd;
   border-radius: 20px;
   background: #f9eef2;
-  cursor: pointer;
-  transition: 0.2s ease;
-}
-
-.interest-button:hover {
-  background: #f3e3ea;
+  cursor: pointer;;
 }
 
 .interest-button.active {
@@ -51,7 +51,7 @@
   margin-top: 20px;
   padding: 15px;
   border-radius: 12px;
-  background: #f8fbf8;
+  background: white;
 }
 
 .selected-display h3 {
