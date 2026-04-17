@@ -17,6 +17,7 @@
 .logo-text {
   font-family: cursive;
   font-size: 20px;
+  text-decoration: none;
   color: #7fa37a;
 }
 
@@ -35,9 +36,26 @@
 }
 
 .signin {
-  font-size: 20px;
+  text-decoration: none;
+  color: inherit;  
+  font-size: 22px;
   cursor: pointer;
   font-family: cursive;
+}
+
+.about {
+  text-decoration: none;
+  color: inherit;
+  font-size: 25px;
+  font-family: cursive;
+}
+
+.plantInterest {
+   text-decoration: none;
+  color: inherit;
+  font-size: 25px;
+  font-family: cursive;
+
 }
 
 ul li {
