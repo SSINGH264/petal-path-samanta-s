@@ -1,14 +1,33 @@
 import { Link } from "react-router-dom";
+//importing this for animation
+
+import { useEffect, useRef } from "react";
+import { animate } from "motion";
+
 
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 
 // created navbar and links
 const Navbar = () => {
+  const logoRef = useRef(null);
+    useEffect(() => {
+    animate(
+      logoRef.current,
+      { opacity: [0, 1], scale: [0.9, 1] },
+      { duration: 1 }
+    );
+  }, []);
+
   return (
     <div className="navbar">
       <div className="logo-container">
-        <img src={logo} alt="Petal Path Logo" className="logo" />
+        <img 
+        ref = {logoRef}
+        src={logo}
+        alt="Petal Path Logo" 
+        className="logo" />
+
         <Link to="/" className="logo-text">
         Petal Path
         </Link>
@@ -24,7 +43,6 @@ const Navbar = () => {
           <Link to ="/plant-interest" className="plantInterest"> Plant Intrests</Link> 
           </li>  
 
-        <li>Events</li>
       </ul>
 
       <Link to="/signin" className="signin">

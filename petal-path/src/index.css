@@ -17,3 +17,18 @@
     background-position: center;
     min-height: 100vh;
 }
+/* adding this for the media breakpoints */
+/* tablets/large mobile device */
+@media (max-width: 768px) {
+  .app {
+    background-size: contain;
+  }
+}
+
+/* medium size smartphone */
+@media (max-width: 480px) {
+  .app {
+    background-image: none;
+    background-color: contain;
+  }
+}

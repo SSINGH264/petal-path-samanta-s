@@ -1,6 +1,6 @@
 import "./Search.css";
 
-const SearchBar = ({ selectedCity, setSelectedCity }) => {
+const SearchBar = ({ selectedCity, setSelectedCity, onSearch }) => {
     return (
 
         <div className="search">
@@ -17,6 +17,10 @@ const SearchBar = ({ selectedCity, setSelectedCity }) => {
             <option value="Washington D.C.">Washington D.C.</option>
             <option value="St. Louis">St. Louis</option>
         </select>
+
+        <button type="button" onClick={() => onSearch(selectedCity)}>
+          Search
+        </button>
 
         </div>
     );

@@ -17,3 +17,19 @@
   color: #7fa37a;
   font-family: cursive;
 }
+
+.footer-table {
+  margin-left: auto;
+}
+
+.footer-table td {
+  padding: 4px 8px;
+  color: #7fa37a;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: #7fa37a;
+  margin-top: 8px;
+  font-family: cursive;
+}

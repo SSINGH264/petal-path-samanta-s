@@ -1,28 +1,37 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import flowerShow from "../../assets/philadelphiaflowershow.png";
 
 import "./Browse.css";
 import SearchBar from "../Search/Search";
 
 // to create the card & add routing
+//browsecard is the child component
 
-const BrowseCard = ({title, path}) => {
+const BrowseCard = ({title, image, date, location}) => {
     return (
-      <Link to={path} className="browse-link">
-      <div className="browse-card">
-        <div className="card-content"></div>
+        <div className="browse-card">
+        <img src={image} alt={title} className="card-image" />
+        <div className="card-content">
+          <p><strong>{date}</strong></p>
+          <p>{location}</p>
+        </div>
         <div className="card-label">{title}</div>
       </div>
-    </Link>
     );
 };
 
+//the browse is the parent component
 const Browse = () => {
   const [selectedCity, setSelectedCity] = useState("All Cities");
+  const [appliedCity, setAppliedCity] = useState("All Cities");
   const categories = [
     { title: "Philadelphia Flower Show",
       path: "/events/philadelphia-flower-show",
-      city: "Philadelphia"
+      city: "Philadelphia",
+      image: flowerShow,
+      date: "March 1-8, 2026",
+      location: "Pennsylavania Convention Center"
+    
     },
 
     { title: "Orchid Show NYBG",
@@ -67,28 +76,38 @@ const Browse = () => {
     },
   ];
 
+    const handleSearch = (city) => {
+      setAppliedCity(city);
+    };
+
   const filteredCategories =
-    selectedCity === "All Cities"
-      ? categories
-      : categories.filter((category) => category.city === selectedCity);
+  appliedCity === "All Cities"
+    ? categories
+    : categories.filter((category) => category.city === appliedCity);
+
+ // search bar is passing props from browse
 
 return (
     <section className="browse-section">
       <div className="browse-header">
       <h2 className="browse-title">Featured Events</h2>
 
-            <SearchBar
-          selectedCity={selectedCity}
-          setSelectedCity={setSelectedCity}
-        />
+     <SearchBar
+      selectedCity={selectedCity}
+      setSelectedCity={setSelectedCity}
+      onSearch={handleSearch}
+    />
       </div>
 
       <div className="browse-row">
-        {filteredCategories.map((catagory, index) => (
+        {filteredCategories.map((category, index) => (
           <BrowseCard 
           key={index} 
-          title={catagory.title}
-          path={catagory.path}/>
+          title={category.title}
+          path={category.path}
+          image={category.image}
+          date={category.date}
+          location={category.location}/>
         ))}
       </div>
     </section>

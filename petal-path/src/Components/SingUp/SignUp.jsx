@@ -50,6 +50,13 @@ const SignUp = () => {
         />
 
         <input
+          type= "phone"
+          placeholder="Phone"
+          value={setPhone}
+          onChange={(e) => setPhone(e.target.value)}
+          />
+
+        <input
           type="password"
           placeholder="Password"
           value={password}
