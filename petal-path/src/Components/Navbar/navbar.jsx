@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 import { animate } from "motion";
 
 
-import "./Navbar.css";
+import "./navbar.css";
 import logo from "../../assets/logo.png";
 
 // created navbar and links
